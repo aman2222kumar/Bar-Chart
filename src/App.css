@@ -1,38 +1,92 @@
-.App {
+
+.App{
+  position: relative;
+ 
+}
+
+.chartContainer {
+  font-family: sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  top: 15rem;
+ 
+  left: 35rem;
+  
+  
+  
+  transform: rotate(-180deg);
+  border-top: 2px solid red;
+
+}
+.text_bro {
+  display: block;
+  transform: rotate(-180deg);
+}
+.one{
+  transition: all 0.5s;
+
+}
+.one:hover{
+  background-color:yellow !important;
+  color: black !important;
 }
 
-.App-link {
-  color: #61dafb;
+p.text_population{
+  transform: rotate(-180deg);
+  
 }
+p.percentage{
+  transform: rotate(270deg);
+  position:absolute;
+  right: 12rem;
+  top: 8rem;
+  width: 20rem;
+  border-bottom:3px solid rgb(18, 16, 13);
+}
+p.name_of_city{
+  transform: rotate(180deg);
+  position:absolute;
+  right: 10rem;
+  bottom: 10rem;
+  display: block;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+.border{
+  position: relative;
+  
+  top: 21rem;
+  left: 30rem;
+
+  border-top: 1px solid black;
+  z-index: 200;
+  width: 30%;
+  text-align: center;
+  
+}
+@media screen and (max-width:600px) {
+  .border{
+    position: relative;
+    
+    top: 21rem;
+    left: 8rem;
+  
+    border-top: 1px solid black;
+    z-index: 200;
+    width: 60%;
+    text-align: center;
+    
   }
-  to {
-    transform: rotate(360deg);
+  .chartContainer{
+    left:7rem;
+    top: 17rem;
   }
+  
+}
+h1{
+  text-align: center;
+ border-bottom: 1px solid black;
+ 
+ text-transform: uppercase;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
